@@ -13,7 +13,7 @@ function backgroundSequence() {
 			document.getElementById('animated-bg').style.background = "url(" + base + bgImageArray[k] + ") no-repeat center center";
 			document.getElementById('animated-bg').style.backgroundSize ="cover";
 		if ((k + 1) === bgImageArray.length) { setTimeout(function() { backgroundSequence() }, (secs * 1000))} else { k++; }			
-		}, (secs * 1000) * i)	
+		}, (secs * 1500) * i)	
 	}
 }
 backgroundSequence();
