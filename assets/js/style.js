@@ -1,3 +1,4 @@
+
 var bgImageArray = ["bg1.svg", "bg2.svg", "bg3.svg"],
   base = "/assets/img/",
   secs = 4;

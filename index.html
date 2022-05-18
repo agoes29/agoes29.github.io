@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,58 @@
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-  
+  <div class="responsive-bar">
+    <div class="logo">
+      <img src="assets/img/ssss.jpg" style="width: 50px; height: 50px" alt="logo" />
+    </div>
+    <div class="menu">
+      <h4>Menu</h4>
+    </div>
+  </div>
+  <nav class="navbar-wpb">
+    <div class="logo">
+      <img src="assets/img/ssss.jpg" style="width:50px; height:50px" alt="logo" />
+    </div>
+
+    <div class="right floated top-switchers"> <a href="https://www.facebook.com/percentage" class="social icon-facebook"
+      target="_blank"></a> <a href="http://instagram.com/arabica.journal" class="social icon-instagram"
+      target="_blank"></a></div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+
+  </nav>
+
   <div id="animated-bg">
     <div class="textCentered">Welcome to DID Lunatic</div>
   </div>
-  
+
   <script src="assets/js/style.js"></script>
   <script src="assets/plugins/bootstrap/js/bootstrap.js"></script>
   <script src="assets/plugins/jquery/jquery.min.js"></script>
+
+  <script>
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop()) {
+        $('nav').addClass('dark')
+      } else {
+        $('nav').removeClass('dark')
+      }
+    })
+
+    $(document).ready(function () {
+      $('.menu h4').click(function () {
+        $('.navbar-wpb ul').toggleClass('active')
+      })
+    })
+  </script>
 </body>
+
 </html>
